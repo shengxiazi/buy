@@ -1,0 +1,128 @@
+<!--    慢慢买： 比较搜索分类页面/商品列表    author： Yc   Begin at： 2017/1/11 9：57    -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../buy_favicon.ico" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/search-list.css" />
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="layout">
+        <!--头部 star-->
+        <header class="header clearfix">
+            <div class="logo f_left">
+                <!--跳转到首页-->
+                <a href="../../index.html"><img src="images/header_logo.png" width="185.5" height="25" alt="" /></a>
+            </div>
+            <div class="download">
+                <!--跳转到下载页-->
+                <a href="#"><img src="images/header_app.png" width="34" height="34" alt="" /></a>
+            </div>
+        </header>
+        <!--头部 end-->
+
+        <!--搜索栏 star-->
+        <section class="form-search clearfix">
+            <form action="#" class="searchBar f_left">
+                <input type="search" class="search" placeholder="请输入你想比价的商品" />
+                <input type="submit" class="sub" value="搜索" />
+            </form>
+        </section>
+        <!--搜索栏 end-->
+
+        <!--菜单栏 star-->
+        <section class="menuBar clearfix">
+            <div class="menu">
+                <div class="f_left">
+                    <!--跳转到首页-->
+                    <a href="../../index.html">首页</a> >
+                    <!--跳转到全部分类-->
+                    <a href="../category.html">全部分类</a> >
+                    <!--跳转到对应页面-->
+                    <a href="#" id="menuName"></a> >
+                </div>
+                <input type="button" value="筛选" class="btn" />
+            </div>
+        </section>
+        <!--菜单栏 end-->
+
+        <!--————————————————————————————————————以 上 是公共样式————————————————————————————————————————————-->
+
+        <!-- 商品列表 star-->
+        <section class="goodsList">
+            <ul id="list"></ul>
+        </section>
+        <!-- 商品列表 end-->
+
+        <!--翻页 star-->
+        <section class="page">
+            <div class="row" style="margin-left: 0;">
+                <div class="col-xs-4">
+                    <input type="button" value="上一页" id="pageUp" />
+                </div>
+                <div class="col-xs-4">
+                    <select name="select" id="select"></select>
+                </div>
+                <div class="col-xs-4">
+                    <input type="button" value="下一页" id="pageDown" />
+                </div>
+            </div>
+        </section>
+        <!--翻页 end-->
+
+        <!--————————————————————————————————————以 下 是公共样式————————————————————————————————————————————-->
+
+        <!--底部 star-->
+        <footer class="footer">
+            <div class="row" style="margin-left:0px">
+                <!--跳转到登录-->
+                <div class="col-xs-4"><a href="#">登录</a></div>
+                <!--跳转到注册-->
+                <div class="col-xs-4"><a href="#">注册</a></div>
+                <!--返回顶部-->
+                <div class="col-xs-4"><a href="#"><span class="top-box"><img src="images/top.jpg" alt="" width="15" height="15" class="top" />返回顶部</span></a></div>
+            </div>
+            <p>
+                <!--跳转到下载-->
+                <a href="#">手机APP下载 </a>
+                <!--跳转到手机版-->
+                <a href="#">慢慢买手机版 </a> --掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </footer>
+        <!--底部 end-->
+    </div>
+</body>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/search-list.js"></script>
+
+<script type="text/html" id="template">
+    {{each result as value i}}
+    <li class="clearfix">
+        <a href="search-details.html#{{ value.productId }}">
+            <div class="goods">
+                <div class="f_left">{{ #value.productImg }}</div>
+                <div class="goods_info">
+                    <div class="name">{{ value.productName }}</div>
+                    <div class="prices">{{ value.productPrice }}</div>
+                    <div class="others">
+                        <span>{{ value.productQuote }}</span>&nbsp;&nbsp;&nbsp;<span>{{ value.productCom }}</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+</html>

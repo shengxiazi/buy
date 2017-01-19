@@ -1,0 +1,267 @@
+body {
+    font-style: 'Microsoft YaHei';
+    background: #fff;
+    display: block;
+    max-width: 640px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+/*header begin*/
+.header {
+    height: 49px;
+    background: #ff841d;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+}
+
+.header .logo {
+    padding: 12px;
+    width: 75%;
+    float: left;
+    margin-left: 5px;
+}
+
+.header .logo a {
+    display: block;
+}
+
+.header .logo a img {
+    display: block;
+    max-height: 25px;
+
+}
+
+.header .appdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 7px;
+}
+
+.header .appdown a img {
+    max-height: 34px;
+    overflow: hidden;
+}
+
+/*header end*/
+
+/*search begin*/
+#form-search {
+    padding: 10px;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#form-search > .search {
+    padding-right: 70px;
+    position: relative;
+}
+
+#form-search > .search > input[type="search"] {
+    width: 100%;
+    height: 30px;
+    float: left;
+    background: #f1f1f1;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+
+#form-search > .search > input[type="button"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 63px;
+    height: 30px;
+    line-height: 30px;
+    background: #ff841d;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/*search end*/
+/*nav begin*/
+.nav {
+    height: 36px;
+    border: 1px solid #e6e6e6;
+    padding-left: 8px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ebebeb));
+    /*渐变背景色*/
+}
+
+.nav a {
+    line-height: 36px;
+    font-size: 14px;
+}
+
+/*nav end*/
+/*brand begin*/
+.brand {
+    background-color: #fff;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+/*第一级菜单begin*/
+.brand > .first > .title {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    color: #874604;
+    font-size: 16px;
+    background-color: #eee;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+/*.brand > #content {*/
+/*padding: 0px 10px;*/
+/*}*/
+.brand > .first > #content > div {
+    position: relative;
+    background-color: #f1f1f1;
+}
+
+.brand > .first > #content > div > a {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 16px;
+    display: block;
+    border-top: 1px solid #ccc;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.brand > .first > #content > div > s {
+    overflow: hidden;
+    width: 18px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.brand > .first > #content > div > s > i {
+    font-size: 30px;
+    line-height: 20px;
+    position: absolute;
+    top: -11px;
+}
+
+/*第一级菜单end*/
+/*第二级菜单begin*/
+.brand > .second > .titleTwo {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    color: #874604;
+    font-size: 16px;
+    background-color: #eee;
+    padding-left: 10px;
+}
+
+.brand > .second > .modelTwo {
+    display: block;
+    padding: 10px 10px;
+    height: 60px;
+    border-bottom: 1px solid #E7E7E7;
+    position: relative;
+}
+
+.brand > .second > .modelTwo > span {
+    background-color: #C9C9C9;
+    color: #FFFFF6;
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.brand > .second > .modelTwo > h4 {
+    font-size: 18px;
+    padding-left: 30px;
+    color: #000000;
+}
+
+.brand > .second > .modelTwo > p {
+    color: #999999;
+    padding-left: 30px;
+}
+
+.brand > .second > .modelTwo > s {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    width: 12px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.brand > .second > .modelTwo > s > i {
+    font-size: 45px;
+    position: absolute;
+    right: 0;
+}
+
+/*第二级菜单end*/
+.brand > .third > .titleThree {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    color: #874604;
+    font-size: 16px;
+    background-color: #eee;
+    padding-left: 10px;
+}
+
+/*第三级菜单begin*/
+
+/*第三级菜单end*/
+/*brand end*/
+
+/*foot begin*/
+.foot {
+    background-color: #f1f1f1;
+}
+
+.footTop {
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 25px;
+}
+
+.foot > .footTop a {
+    /*display: inline-block;*/
+    box-sizing: border-box;
+    float: left;
+    font-size: 14px;
+    border-right: 1px solid #c4c4c4;
+    text-align: center;
+    width: 30%;
+}
+
+.foot > .footTop > a > img {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-top: -5px;
+    margin-right: 2px;
+}
+
+.foot > .footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 15px 0;
+    color: #666;
+}
+
+/*foot end*/

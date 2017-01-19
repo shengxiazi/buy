@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.00" />
+	<title>慢慢买</title>
+    <link rel="shortcut icon" href="buy_favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+  <div class="index_layout">
+      <!------------------------------------------------头部部分s-------------------------------------------------------------------------->
+      <header>
+          <div class="h_logo">
+              <a href="#"> <img src="images/header_logo.png" alt=""/></a>
+          </div>
+          <div class="h_download">
+              <a href="#"> <img src="images/header_app.png" alt=""/></a>
+          </div>
+      </header>
+      <!-------------------------------------------------头部部分e------------------------------------------------------------------------->
+      <!-------------------------------------------------搜索部分s------------------------------------------------------------------------->
+      <div class="serach clearfix" >
+            <input type="search" value="请输入你想比价的商品" id="searchcon" />
+            <input type="submit" value="搜索" id="searchbtn" >
+      </div>
+      <!-------------------------------------------------搜索部分e------------------------------------------------------------------------->
+      <!-------------------------------------------------导航栏s---------------------------------------------------------------------------->
+      <nav class="menu clearfix">
+          <ul class="top"></ul>
+      </nav>
+      <!-------------------------------------------------导航栏e---------------------------------------------------------------------------->
+      <!-------------------------------------------------超值折扣s------------------------------------------------------------------>
+      <section class=" clearfix">
+          <!--黄色条部分-->
+          <div class="suggest">
+              <p>超值折扣推荐</p>
+              <div class="more_icon">
+                  <a href="#"><img src="images/more.png" alt=""/></a>
+              </div>
+          </div>
+      </section>
+      <!-------------------------------------------------超值折扣e------------------------------------------------------------------>
+      <!-------------------------------------------------商品部分s------------------------------------------------------------------>
+      <ul id="list" class="clearfix"></ul>
+      <!-------------------------------------------------商品部分e----------------------------------------------------------------->
+      <!-------------------------------------------------优惠信息s-------------------------------------------------------------->
+      <div class="info_price">
+          <a href="modules/moneyctrl.html">
+              点击更多优惠信息》
+          </a>
+      </div>
+      <!-------------------------------------------------优惠信息e-------------------------------------------------------------->
+      <!-------------------------------------------------底部s--------------------------------------------------------------->
+      <footer class="clearfix">
+          <!---------------------------------------------品牌排行s------------------------------------------------------------>
+          <div class="brand">
+              <p>品牌排行</p>
+              <div class="more_icon">
+                  <a href="#"><img src="images/more.png" alt=""/></a>
+              </div>
+          </div>
+          <!----------------------------------------------品牌排行e------------------------------------------------------------>
+          <!----------------------------------------------登录注册s------------------------------------------------------------>
+          <div class="function clearfix">
+              <a class="login" href='modules/login.html'>登录</a>
+              <a class="sign" href="modules/register.html">注册</a>
+              <a class="back" href="#">
+                  <img src="images/top.jpg" alt=""/>
+                  返回顶部
+              </a>
+          </div>
+          <!-----------------------------------------------登录注册e------------------------------------------------------------->
+          <!-----------------------------------------------下载s--------------------------------------------------------------->
+          <div class="download">
+              <p><span>手机app下载</span>慢慢买手机版--掌上比价平台</p>
+              <p>m.manmanbuy.com</p>
+          </div>
+          <!------------------------------------------------下载e------------------------------------------------------------->
+      </footer>
+      <!-----------------------------------------------------底部e------------------------------------------------------------>
+  </div>
+</body>
+<!--引入模板-->
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/index.js"></script>
+
+
+<!--导航部分模板-->
+<script type="text/html" id="menutpl">
+    {{each result as value}}
+    <!--后台返回给我们的是result这个数组，现在遍历数组，取出每一项的值-->
+    <li class="menu_item">
+        <a href="modules/{{value.titlehref}}">
+            <!--要加#，因为后面有标签，不然会被当成字符串处理-->
+            {{#value.img}}
+            <p>{{value.name}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<!--商品部分模板-->
+<script type="text/html" id="productId">
+    {{each result as value}}
+        <li class="clearfix ui-border-b">
+            <a href="modules/inlanddiscount.html?productid={{#value.productId}}">
+                <div class="pic">
+                    {{#value.productImgSm}}
+                </div>
+                <div class="clearfix info">
+                    <div class="title">
+
+                        {{#value.productName}}
+
+                        <span>{{#value.productPinkage}}</span>
+                    </div>
+                    <div class="other">
+                        {{#value.productFrom}}
+                        <span class="mall">{{#value.productTime}}</span>
+                        <span class="comment">
+                            <i class="icon-comment"></i>
+                           {{#value.productComCount}}
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+</script>
+
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>凑单品</title>
+    <link rel="shortcut icon " href="gsproduct/buy_favicon.ico"/>
+    <link rel="stylesheet" href="gsproduct/css/base.css"/>
+    <link rel="stylesheet" href="gsproduct/css/gsproduct.css"/>
+    <link rel="stylesheet" href="gsproduct/bootstrap/css/bootstrap.css"/>
+</head>
+<body>
+    <div class="bill_layout">
+        <!-------------------------------------------------头部部分s------------------------------------------------------------------------->
+        <header>
+            <div class="b_logo">
+                <a href="../index.html" class="buy_icon glyphicon-menu-left"></a>
+            </div>
+            <p>凑单品</p>
+            <div class="h_download">
+                <a href="#"> <img src="gsproduct/images/header_app.png" alt=""/></a>
+            </div>
+        </header>
+        <!-------------------------------------------------头部部分e--------------------------------------------------------------------------->
+        <!-------------------------------------------------导航栏s----------------------------------------------------------------------------->
+        <div class="list">
+                <nav>
+                    <div class="filter">
+                        <ul class="clearfix">
+                            <li id="jd"><a href="javascript:;">京东<i class="triangle_jd"></i></a></li>
+                            <li id="areabtn"><a href="javascript:;">华北<i class=triangle_area></i></a></li>
+                            <li id="pricebtn"><a href="javascript:;">全部价格<i class="price_icon"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="serch" id="serch">
+                        <i class="icon_serch">
+                            <img src="gsproduct/images/search.jpg" alt=""/>
+                        </i>
+                    </div>
+                </nav>
+            <!-------------------------------------------------导航栏e----------------------------------------------------------------------------->
+            <!------------------------------------------------全部价格隐藏部分s-------------------------------------------------------------------->
+             <div class="all_price hide">
+                 <ul>
+                     <li><a href="#">全部价格</a></li>
+                     <li><a href="#">1-3元</a></li>
+                     <li><a href="#">3-5元</a></li>
+                     <li><a href="#">5-10元</a></li>
+                     <li><a href="#">10-15元</a></li>
+                     <li><a href="#">15元以上</a></li>
+                 </ul>
+             </div>
+            <!-----------------------------------------------全部价格隐藏部分e--------------------------------------------------------------------->
+             <!----------------------------------------------搜索菜单隐藏部分s--------------------------------------------------------------------->
+            <div class="serch_menu hide" id="menu">
+                <div class="serch_menu_icon">
+                    <!--<i class="buy_icon glyphicon glyphicon-search"></i>-->
+                    <input type="search" value="请输入你想要凑单的商品" id="searchcon" />
+                    <!--<input type="button" value="搜索"id="searchbth"/>-->
+                    <div id="searchbth">搜索</div>
+                </div>
+                <div class="sort">
+                    <p>排序</p>
+                    <div class="sort_box">销量</div>
+                    <div class="sort_box" id="sort_price">价格</div>
+                    <div class="sort_box">价格</div>
+                </div>
+                <div class="itemize">
+                    <p>分类</p>
+                    <div class="itemize_box" id="itemize_box_one">全部</div>
+                    <div class="itemize_box">家居</div>
+                    <div class="itemize_box">数码</div>
+                    <div class="itemize_box">办公</div>
+                    <div class="itemize_box" id="itemize_box_five">个护</div>
+                    <div class="itemize_box" id="itemize_box_six">食品</div>
+                    <div class="itemize_box" id="itemize_box_seven">母婴</div>
+                    <div class="itemize_box" id="itemize_box_eight">服饰</div>
+                </div>
+            </div>
+            <!----------------------------------------------搜索菜单隐藏部分e------------------------------------------------------------------------->
+
+            <!----------------------------------------------动态生成的结构-商店s------------------------------------------------------------------->
+            <div class="popsort popbox"></div>
+            <!----------------------------------------------动态生成的结构-商店e-------------------------------------------------------------------->
+            <!----------------------------------------------动态生成的结构-区域e-------------------------------------------------------------------->
+            <div class="popprice popbox "></div>
+            <!----------------------------------------------动态生成的结构-区域e-------------------------------------------------------------------->
+            <!----------------------------------------------动态生成结构-商品s---------------------------------------------------------------------------------->
+            <div class="bd"></div>
+            <!-----------------------------------------------动态生成结构-商品e-->
+        </div>
+    </div>
+</body>
+<script src="gsproduct/lib/jquery/jquery-2.2.2.min.js"></script>
+<script src="gsproduct/bootstrap/js/bootstrap.min.js"></script>
+<script src="gsproduct/js/template.js"></script>
+<script src="gsproduct/js/gsproduct.js"></script>
+<!--商店模板-->
+<script type="text/html" id ="jdShop" >
+    <ul class="store">
+    {{each result as value}}
+            <li class="mmm_store">
+                <a href="#">
+                    {{#value.shopName}}
+                </a>
+            </li>
+    {{/each}}
+    </ul>
+</script>
+
+
+<!--区域模板-->
+<script type="text/html" id="area">
+    <ul class="region">
+    {{each result as value}}
+        <li class="mmm_region">
+            <a href="#">
+                {{#value.areaName}}
+            </a>
+        </li>
+    {{/each}}
+    </ul>
+</script>
+
+<!--价格模板-->
+<script type="text/html" id="productId">
+<ul id="container" class="masonry clearfix" >
+{{each result as value}}
+<li>
+    <a href="http://item.m.jd.com/ware/view.action?wareId=1274360" class="item border-img">
+        <div class="pic">
+            <img src="{{value.productImg}}" >
+        </div>
+        <div class="title">
+            {{#value.productName}}
+        </div>
+        <div class="other clearfix">
+            <div class="price">{{#value.productPrice}}</div>
+            <div class="bill_btn">去凑单</div>
+        </div>
+    </a>
+</li>
+{{/each}}
+</ul>
+</script>
+</html>

@@ -1,0 +1,333 @@
+.index_layout {
+   min-width: 320px;
+   max-width: 640px;
+   margin: 0 auto;
+
+}
+body {
+    background-color: #F1F1F1;
+    font-family:'sans-serif';
+}
+/*头部部分s*/
+header {
+    width:100%;
+    height: 50px;
+    background-color: #FF841D;
+    /*padding: 8px 6px 9px 18px;*/
+}
+
+header .h_logo a {
+    display: inline-block;
+    width:50%;
+    height: 50px;
+    float: left;
+    padding-top:13px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+}
+header .h_logo img {
+    display: inline-block;
+    /*width: 371px;*/
+    max-height: 25px;
+}
+header .h_download a{
+    display: inline-block;
+    /*width:50%;*/
+    height: 50px;
+    float: right;
+    padding-top:8px;
+    padding-bottom: 9px;
+    padding-right: 6px;
+}
+header .h_download img {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+}
+/*头部部分e*/
+/*搜索部分s*/
+.serach {
+    height: 30px;
+    background-color:white;
+    padding: 10px;
+    margin-bottom: 9px;
+}
+.serach #searchcon {
+    float: left;
+    display: inline-block;
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 20px;
+    background-color: #F1F1F1;
+    color:#A9A9A9;
+
+}
+.serach #searchbtn {
+    float: right;
+    display: inline-block;
+    width: 18%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #FF841D;
+    color:white;
+    font-size: 14px;
+}
+/*搜索部分e*/
+
+/*导航栏s*/
+.hide {
+    display: none;
+}
+nav {
+    /*height: 228px;*/
+    background-color: white;
+    margin-bottom: 5px;
+}
+nav {
+  padding: 25px 0 12px 0;
+}
+nav .top li {
+    width: 25%;
+    float: left;
+    text-align:center;
+}
+nav .top li a img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+nav .top li a p {
+    margin-bottom: 17px;
+}
+
+/*导航栏e*/
+/*商品区块s*/
+/*建议部分s*/
+section {
+    height:34px;
+}
+section .suggest {
+    height: 19px;
+    background-color: #FFA024;
+    padding: 8px 10px 7px 10px;
+    border-bottom: 1px solid #FFC881;
+
+}
+section .suggest p {
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    float: left;
+}
+section .suggest a img {
+    float: right;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+/*建议部分s*/
+
+/*产品部分s*/
+#list li {
+    height: 150px;
+    background-color: white;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 20px 10px 20px 5px;
+}
+#list li a .pic img {
+    float: left;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+}
+#list li a .info{
+   overflow: hidden;
+   /*padding-left: 5px;*/
+}
+
+#list li a .info .title span {
+    color:#FF7000;
+}
+.info .other {
+    margin-top: 52px;
+    /*如果出现滚动条很有可能就是这离margin-top设置的太大了*/
+    color:#C4C4C4;
+}
+.info .other .comment {
+    font-size: 14px;
+    float: right;
+}
+#list li a .info .other .comment .icon-comment {
+    /*width: 22px;*/
+    /*height: 19px;*/
+    /*display: inline-block;*/
+    /*background: url("../images/icon.jpg");*/
+    /*margin-right: 3px;*/
+
+
+    background-image: url("../images/icon.jpg");
+    width: 19px;
+    height: 20px;
+    display: inline-block;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+/*产品部分e*/
+/*商品区块e*/
+
+
+
+
+
+
+
+
+/*产品部分e*/
+
+.info .other {
+    margin-top: 52px;
+    /*如果出现滚动条很有可能就是这里margin-top设置的太大了*/
+    color:#C4C4C4;
+}
+.info .other .comment {
+    font-size: 14px;
+    float: right;
+}
+.info .other .comment .icon_comment {
+    width: 22px;
+    height: 19px;
+    display: inline-block;
+    background: url("../images/icon.jpg");
+    margin-right: -6px;
+}
+.info .other{
+    font-size: 12px;
+}
+.info .mall{
+    font-size: 12px;
+}
+.info .comment{
+    font-size: 12px !important;
+}
+/*产品部分e*/
+/*优惠信息s*/
+.info_price {
+    height: 40px;
+    border-bottom:1px solid #E2E2E3;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 7px;
+    background-color: #fff;
+
+}
+.info_price a {
+    height: 30px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #E2E2E3;
+    border-radius: 4px ;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    background-color: #F6F6F6;
+
+
+}
+
+/*优惠信息e*/
+
+/*品牌排行榜s*/
+/*品牌排行s*/
+footer {
+    height:157px;
+    background-color: #F1F1F1;
+    border-right: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+}
+footer .brand {
+    height: 20px;
+    background-color: #FFA024;
+    padding: 8px 10px 7px 10px;
+    border-bottom: 1px solid #FFC881;
+    margin-bottom: 25px;
+
+
+}
+footer .brand p {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    float: left;
+    font-family: '微软雅黑';
+}
+footer .brand a img {
+    float: right;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+/*品牌排行e*/
+
+/*登录注册s*/
+footer .function {
+    height: 32px;
+    border-bottom: 1px solid #C4C4C4;
+    border-top: 1px solid #C4C4C4;
+}
+footer .function .login {
+    width: 30%;
+    height: 32px;
+    float: left;
+    border-right: 1px solid #C4C4C4;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+footer .function .sign {
+    float: left;
+    width: 30%;
+    height: 32px;
+    border-right: 1px solid #C4C4C4;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+footer .function .back {
+    float: left;
+    width: 39%;
+    height: 24px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+
+
+
+}
+footer .function .back img {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+
+}
+/*登录注册e*/
+/*下载部分s*/
+footer .download {
+    height: 33px;
+    text-align: center;
+    /*有两排文字，不能写line-height，让文字居中，不然第二排会被挤出去，使用padding挤出下来即可*/
+    /*line-height: 63px;*/
+    font-size: 14px;
+    padding: 15px 0 15px 0;
+    font-size: 14px;
+}
+
+footer .download p span {
+    color: red;
+    /*font-size: 14px;*/
+}
+

@@ -1,0 +1,55 @@
+/*折扣商品列表 star*/
+.goods-list {
+    width: 100%;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.goods-list ul li {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+
+.goods-list ul li div {
+    text-align: left;
+}
+
+.goods-title {
+    margin-top: 5px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.goods-price {
+    margin-top: 5px;
+    color: #ff6c00;
+    font-weight: 400;
+    overflow: hidden;
+    height: 20px;
+}
+
+.goods-list ul li img {
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+}
+.goods-list ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.goods-from {
+    color: #a1a1a1;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 7px;
+}
+
+/*折扣商品列表 end*/

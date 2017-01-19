@@ -1,0 +1,88 @@
+/*设置默认字符集编码*/
+@charset "UTF-8";
+html, body, header,nav,main,section,footer,article,aside,figure,ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, a,fieldset, legend, img ,input,textarea,i,span ,
+::before,::after{
+    margin: 0;
+    padding: 0;
+     /* 清除点击高亮  兼容移动端低版本浏览器 */
+    -webkit-tap-highlight-color: transparent;
+    /* 盒子宽度从边框开始计算 */
+    box-sizing: border-box;
+ }
+/*各浏览器显示不同，去掉边框等默认样式*/
+input, button,textarea {
+    border: none;
+    outline-style: none;
+    resize: none;
+    -webkit-appearance: none;  /*组件默认的样式空*/
+}
+ul, ol {
+    list-style: none;
+}
+select, input, textarea {
+    resize: none;
+}
+/*去掉行内替换元素空白缝隙*/
+img {
+    /* vertical-align: middle; */
+    display: block;
+}
+table {
+    border-collapse: collapse;
+}
+html,body {
+    /* 字体自适应 */
+
+    overflow-x: hidden;
+}
+/*伪元素清除浮动*/
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+      *zoom: 1;
+}
+a {
+    color: #5A5A5A;
+    text-decoration: none;
+}
+a:hover {
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+}
+/*废物利用*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+/*公共类*/
+.f_left {
+    float: left;
+}
+.f_right {
+    float: right;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+
+.layout {
+    max-width: 640px;
+    min-width: 300px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}

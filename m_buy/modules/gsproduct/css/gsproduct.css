@@ -1,0 +1,327 @@
+.bill_layout {
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+body {
+    background-color: #F1F1F1;
+    font-family:'sans-serif';
+    border-right: 1px solid #B9B9B9;
+    border-left: 1px solid #B9B9B9;
+
+
+}
+/*头部部分s*/
+header {
+    width:100%;
+    height: 50px;
+    background-color: #FF841D;
+    padding: 10px 18px 10px 18px;
+    position: relative;
+    /*text-align: center;*/
+    /*line-height: 50px;*/
+    box-shadow: 0px 5px 8px #dddddd;
+
+}
+
+
+header p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    color: white;
+    margin-top: -12px;
+    margin-left: -26px;
+}
+header .b_logo a {
+    font-size: 20px;
+    color:white !important;
+    text-decoration: none !important;
+}
+
+header .h_download a{
+    display: inline-block;
+
+    height: 50px;
+    position: absolute;
+    right:12px;
+    top:10px;
+
+}
+header .h_download img {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+}
+/*头部部分e*/
+
+/*导航栏s*/
+nav {
+    height: 57px;
+    text-align: center;
+    line-height: 57px;
+    border-bottom: 1px solid #DADADA;
+    position: relative;
+
+}
+nav .filter {
+    width:84%;
+    border-right: 1px solid #DADADA;
+}
+nav li a {
+    float: left;
+    width: 28%;
+    position: relative;
+    font-size: 16px;
+    color:black !important;
+    text-decoration: none !important;
+}
+nav li a i {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border:8px solid transparent;
+    border-top: 8px solid #5A5A5A;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: 18px;
+    margin-top: -4px;
+
+}
+nav li a .price_icon {
+    display: inline-block;
+    margin-left: 32px;
+    margin-top: -4px;
+}
+
+nav .serch {
+    width: 16%;
+    position: absolute;
+    top:0;
+    right:0;
+}
+nav .serch .icon_serch {
+    display: block;
+    width: 100%;
+    height: 57px;
+
+
+}
+nav .serch .icon_serch img {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    right:50%;
+    margin-right: -20px;
+    top:50%;
+    margin-top: -15px;
+    cursor: pointer;
+}
+/*导航栏e*/
+/*京东下拉菜单s*/
+.mmm_store a {
+    text-decoration: none !important;
+    color:black !important;
+}
+/*京东下拉菜单e*/
+.mmm_region a {
+    text-decoration: none !important;
+    color:black !important;
+}
+/*全部价格隐藏部分s*/
+.all_price ul li {
+    border-bottom:1px solid #EEEEEE;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.all_price ul li a {
+    color:black !important;
+    text-decoration: none !important;
+}
+/*全部价格隐藏部分e*/
+
+/*搜索下拉部分s*/
+.show {
+    display: block;
+}
+.hide {
+    display:none;
+}
+.serch_menu {
+    border-bottom:1px solid #EEEEEE;
+    padding-bottom: 5px;
+}
+.serch_menu .serch_menu_icon  {
+    width: 100%;
+    height: 64px;
+    border-radius: 4px;
+    padding: 16px 15px;
+}
+.serch_menu .serch_menu_icon  #searchcon {
+    float: left;
+    width: 80%;
+    height: 40px;
+    border: 1px solid #EEEEEE;
+    padding-left: 10px;
+}
+.serch_menu .serch_menu_icon  #searchbth {
+    float: right;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size:18px;
+}
+.serch_menu  .sort {
+    height: 106px;
+    padding-top: 15px;
+    padding-left: 16px;
+    border-bottom: 1px solid #EEEEEE;
+}
+#sort_price {
+    background-color: #FF9501;
+    color:white;
+}
+.serch_menu  .sort .sort_box {
+    width: 20%;
+    height: 35px;
+    float: left;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    margin-right: 16px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.serch_menu {
+    width: 100%;
+    position: relative;
+    z-index:100;
+    top:0px;
+    left: 0;
+}
+.show {
+    display: block;
+}
+.serch_menu .itemize {
+    height: 145px;
+    padding-top: 15px;
+    padding-left: 16px;
+}
+.serch_menu .itemize_box {
+    float: left;
+    width: 20%;
+    height: 35px;
+    margin-right: 16px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 35px;
+}
+#itemize_box_five,#itemize_box_six,#itemize_box_seven,#itemize_box_eight {
+    margin-top: 16px;
+}
+#itemize_box_one {
+    background-color: #FF9501;
+    color:white;
+}
+/*动态渲染的数据——商店s*/
+.popsort ul li a {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    background-color: #FEFEFE;
+    border-bottom: 1px solid #D9D9D9;
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 5px;
+    color:black;
+}
+/*动态渲染的数据——商店e*/
+/*动态渲染的数据——地区s*/
+.popprice ul li a {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    background-color: #FEFEFE;
+    border-bottom: 1px solid #D9D9D9;
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 5px;
+    color:black;
+}
+/*动态渲染的数据——地区e*/
+/*动态渲染数据--商品s*/
+.list .bd {
+    padding: 14px;
+    background-color: #F1F1F1;
+}
+
+.list .bd ul li{
+    float: left;
+    width: 49%;
+    height: 232px;
+    margin-bottom: 10px;
+}
+
+.list .bd ul li:nth-child(2n+1) {
+    margin-right: 5px;
+}
+
+.list .bd ul li a{
+    display:block;
+    height: 232px;
+    background-color: white;
+    color:black;
+    text-decoration: none !important;
+}
+
+.list .bd ul li a img {
+    display: inline-block;
+    height: 174px;
+    width: 100%;
+    border:1px solid #CCCCCC;
+}
+.list .bd ul li a img {
+    max-width: 100%;
+}
+
+.bd .title {
+    color:black;
+    height: 14px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 6px;
+}
+.list .bd ul li a .other {
+    margin-top: 7px;
+}
+
+.list .bd ul li a .other .price{
+    float: left;
+    color: red;
+    margin-left: 5px;
+}
+.bill_btn {
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    background-color: red;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #FF9501;
+    color: white;
+    float: right;
+    margin-right: 5px;
+}
+/*动态渲染数据--商品e*/
