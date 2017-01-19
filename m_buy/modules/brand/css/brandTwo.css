@@ -1,0 +1,311 @@
+body {
+    font-style: '微软雅黑';
+    background: #fff;
+    display: block;
+    max-width: 640px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+/*header begin*/
+.header {
+    height: 49px;
+    background: #ff841d;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+}
+
+.header .logo {
+    padding: 12px;
+    width: 75%;
+    float: left;
+    margin-left: 5px;
+}
+
+.header .logo a {
+    display: block;
+}
+
+.header .logo a img {
+    display: block;
+    max-height: 25px;
+
+}
+
+.header .appdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 7px;
+}
+
+.header .appdown a img {
+    max-height: 34px;
+    overflow: hidden;
+}
+
+/*header end*/
+
+/*search begin*/
+#form-search {
+    padding: 10px;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#form-search > .search {
+    padding-right: 70px;
+    position: relative;
+}
+
+#form-search > .search > input[type="search"] {
+    width: 100%;
+    height: 30px;
+    float: left;
+    background: #f1f1f1;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+
+#form-search > .search > input[type="button"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 63px;
+    height: 30px;
+    line-height: 30px;
+    background: #ff841d;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/*search end*/
+/*nav begin*/
+.nav {
+    height: 36px;
+    border: 1px solid #e6e6e6;
+    padding-left: 8px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ebebeb));
+    /*渐变背景色*/
+}
+
+.nav a {
+    line-height: 36px;
+    font-size: 14px;
+}
+
+/*第二级菜单begin*/
+.brand .titleTwo {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    color: #874604;
+    font-size: 16px;
+    background-color: #eee;
+    padding-left: 10px;
+}
+
+.brand > .second > .modelTwo {
+    display: block;
+    padding: 10px 10px;
+    height: 60px;
+    border-bottom: 1px solid #E7E7E7;
+    position: relative;
+}
+
+.brand > .second > .modelTwo > span {
+    background-color: #C9C9C9;
+    color: #FFFFF6;
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.brand > .second > .modelTwo > h4 {
+    font-size: 18px;
+    padding-left: 30px;
+    color: #000000;
+}
+
+.brand > .second > .modelTwo > p {
+    color: #999999;
+    padding-left: 30px;
+}
+
+.brand > .second > .modelTwo > s {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    width: 12px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.brand > .second > .modelTwo > s > i {
+    font-size: 45px;
+    position: absolute;
+    right: 0;
+}
+
+/*第二级菜单end*/
+
+/*第二级下一菜单begin*/
+.brand > .third > ul > li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.brand > .third .pic {
+    margin-right: 10px;
+}
+
+.brand > .third .info {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.brand > .third .info > .titt {
+    color: #333333;
+    line-height: 22px;
+    min-height: 44px;
+    word-break: break-all;
+}
+
+.brand > .third .info > .price > .pr {
+    font-size: 18px;
+    color: #ea3900;
+    /*vertical-align: middle;*/
+    /*float: left;*/
+}
+
+.brand > .third .info > .price > .star {
+    font-size: 22px;
+    color: #FF9000;
+}
+
+.brand > .third .info > .other {
+    font-size: 12px;
+    color: #999999;
+}
+
+.brand > .third .info > .other > span {
+    margin-right: 10px;
+}
+
+/*第二级下一菜单end*/
+
+/*第二级评论菜单begin*/
+.brand > .fourth > ul > li {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.brand > .fourth a {
+    display: block;
+}
+
+.brand > .fourth .protite {
+    margin-bottom: 10px;
+}
+
+.brand > .fourth .protite > .pic {
+    margin-right: 10px;
+}
+
+.brand > .fourth .protite > .tite {
+    color: #999;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.brand > .fourth .combox {
+    background: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+}
+
+/*三角形,利用2个伪类，做出三角形交过，一个外充当边框，一个内部补充颜色*/
+.brand > .fourth .combox::before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 29px;
+    top: -8px;
+    border-right: 7px solid transparent;
+    border-bottom: 8px solid #e7e7e7;
+    border-left: 7px solid transparent;
+
+}
+
+.brand > .fourth .combox::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 30px;
+    top: -7px;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #f8f8f8;
+    border-left: 7px solid transparent;
+}
+
+.brand > .fourth .combox > .name > .star {
+    font-size: 22px;
+    color: #FF9000;
+}
+
+.brand > .fourth .combox > .comment {
+    color: #000;
+    margin-top: 10px;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+/*第二级评论菜单end*/
+/*foot begin*/
+.foot {
+    background-color: #f1f1f1;
+}
+
+.footTop {
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 25px;
+}
+
+.foot > .footTop a {
+    /*display: inline-block;*/
+    box-sizing: border-box;
+    float: left;
+    font-size: 14px;
+    border-right: 1px solid #c4c4c4;
+    text-align: center;
+    width: 30%;
+}
+
+.foot > .footTop > a > img {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-top: -5px;
+    margin-right: 2px;
+}
+
+.foot > .footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 15px 0;
+    color: #666;
+}
+
+/*foot end*/

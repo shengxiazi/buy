@@ -1,0 +1,225 @@
+@charset 'utf-8';
+* {
+     margin: 0;
+     padding: 0;
+}
+img {
+    display: inline-block !important;
+}
+/*布局容器 */
+.buy_layout {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 字体图标 */
+@font-face {
+    font-family: "buy";
+    src:
+    url(../fonts/glyphicons-halflings-regular.eot) format("embedded-opentype"),
+    url(../fonts/glyphicons-halflings-regular.svg) format("svg"),
+    url(../fonts/a.svg) format('svg'),
+    url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"),
+    url(../fonts/glyphicons-halflings-regular.woff) format("woff");
+}
+/* 使用字体图标 */
+.buy_icon {
+    font-family: 'buy';
+}
+
+html, body {
+     background-color: #EFEFEF;
+}
+.wraper {
+    min-width: 340px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+/*头部和搜索框*/
+/*顶部的logo*/
+header {
+    background: #ff841d;
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+header a:first-child {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+header a:first-child img {
+    width: 185.5px;
+    display: block;
+}
+header a:last-child {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+header a:last-child img {
+    width: 34px;
+    display: block;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+/*搜索*/
+#search {
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 83px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+#search input {
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 10px;
+    border: none;
+    outline: white;
+    height: 30px;
+    background: #f5f5f5;
+    border-radius: 15px;
+    font-family: "Microsoft YaHei";
+}
+#search button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 63px;
+    height: 30px;
+    background: #ff841d;
+    border-radius: 15px;
+    outline: white;
+    border: none;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+
+/*主体区开始*/
+.main {
+    padding: 10px;
+}
+.main .name {
+    background-color: #fdfdfd;
+    font-size: 14px;
+    font-family: "MicroSoft YaHei", "sans-serif";
+    border: solid 1px #ccc;
+    border-top-color: #aaa;
+    padding-left: 8px;
+    color: #999;
+    width: 100%;
+    height: 38px;
+    border-radius: 3px;
+    outline: none;
+}
+.main .password {
+    background-color: #fdfdfd;
+    margin-top: 10px;
+    font-size: 14px;
+    border: solid 1px #ccc;
+    border-top-color: #aaa;
+    padding-left: 8px;
+    color: #666;
+    width: 100%;
+    height: 38px;
+    border-radius: 3px;
+    outline: none;
+}
+.main .sub {
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    overflow: hidden;
+    border: none;
+    border-bottom: 1px solid #bababa;
+    width: 100%;
+    color: #fff;
+    background-color: #ff9000;
+    outline: none;
+}
+.main .chex {
+    font-size: 15px;
+    font-family: "MicroSoft YaHei", "sans-serif";
+}
+.main .test {
+    margin-top: 10px;
+   -webkit-appearance: checkbox;
+}
+.info {
+    font-size: 13px;
+    font-family: "MicroSoft YaHei", "sans-serif";
+    margin-top: 45px;
+    color: #888;
+}
+/*主体区结束*/
+
+/*底部栏开始*/
+.footer {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #EFEFEF;
+}
+
+.footer .login ul {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #c4c4c4;
+    border-right: none;
+    border-left: none;
+}
+
+.footer .login ul li a {
+    color: black;
+}
+
+.footer .login ul li {
+    border-right: 1px solid #c4c4c4;
+    font-size: 15px;
+    font-family: "Microsoft YaHei UI";
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+
+.footer .login ul li:nth-child(3) {
+    border-right: none;
+}
+
+.footer .one {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei UI";
+}
+
+.footer .two {
+    text-align: center;
+    font-size: 12px;
+    font-family: "Microsoft YaHei UI";
+}
+
+.footer p a {
+    font-size: 12px;
+    color: black;
+}
+/*底部栏结束*/
+
+

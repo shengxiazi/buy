@@ -1,0 +1,216 @@
+.index_layout {
+   min-width: 320px;
+   max-width: 640px;
+   margin: 0 auto;
+
+}
+body {
+    background-color: #F1F1F1;
+    font-family:'sans-serif';
+}
+a {
+    text-decoration: none !important;
+}
+/*商品区块s*/
+/*头部部分s*/
+header {
+    width: 100%;
+}
+    /* 标题头 */
+header .cabbage_tit {
+    height: 44px;
+    background: #ff841d;
+    position: relative;
+}
+header .cabbage_tit a{
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 44px;
+}
+header .cabbage_tit a:first-of-type {
+    left: 0;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 44px;
+}
+header .cabbage_tit a:last-of-type {
+    right: -8px;
+}
+header .cabbage_tit a:last-of-type img {
+    width: 34px;
+    height: 34px;
+    margin-top: 6px;
+}
+header .cabbage_tit h3 {
+    width: 100%;
+    height: 44px;
+    padding: 0 20%;
+    text-align: center;
+    line-height: 44px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    font-family: "sans-serif";   /*移动设备默认的字体 */
+}
+/*产品部分s*/
+#list li {
+    height: 150px;
+    background-color: white;
+    padding: 20px 10px 20px 5px;
+}
+#list li a .pic img {
+    float: left;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0px;
+}
+#list li a .info{
+   overflow: hidden;
+}
+#list li a .info .title span {
+    color:#FF7000;
+}
+.info .other {
+    margin-top: 52px;
+    /*如果出现滚动条很有可能就是这离margin-top设置的太大了*/
+    color:#C4C4C4;
+    overflow: hidden;
+    font-size: 12px;
+}
+.info .other .mail {
+    font-size: 12px;
+}
+.info .other .comment {
+    float: right;
+    margin-right: -2px;
+    font-size: 12px !important;
+}
+#list li a .info .other .comment .icon-comment {
+    background-image: url("../images/icon.jpg");
+    width: 19px;
+    height: 20px;
+    display: inline-block;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    vertical-align: middle;
+    margin-right: -6px;
+}
+.info .other {
+    margin-top: 52px;
+    /*如果出现滚动条很有可能就是这里margin-top设置的太大了*/
+    color:#C4C4C4;
+}
+/*产品部分e*/
+/*优惠信息s*/
+.info_price {
+    height: 40px;
+    border-bottom:1px solid #E2E2E3;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 7px;
+    background-color: #fff;
+}
+.info_price a {
+    height: 30px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #E2E2E3;
+    border-radius: 4px ;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    background-color: #F6F6F6;
+}
+
+/* 返回顶部 */
+#gotop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    z-index: 4;
+    text-align: center;
+    line-height: 40px;
+    font-size: 65px;
+    border-radius: 20px;
+    opacity: .5;
+    transform: rotate(-90deg);
+    background-color: #000;
+    background-image:  url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" vi…5 41.867 15.911 57.83-.05 16.027-16.013 17.024-42.717.995-58.763z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 22px auto;
+}
+/* 底部 */
+footer {
+    width: 100%;
+    background: #efefef;
+}
+.footer_t {
+    height: 34px;
+    line-height: 34px;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    margin-top: 25px;
+    clear: both;
+}
+.footer_t a:nth-child(-n+2) {
+    width: 30%;
+    float: left;
+    font-size: 14px;
+    border-right: 1px solid #c4c4c4;
+    text-align: center;
+}
+.footer_t a:nth-child(3) {
+    width: 40%;
+    float: left;
+    font-size: 14px;
+    border-right: 1px solid #c4c4c4;
+    text-align: center;
+    background: url(../images/top.jpg) no-repeat 15px 8px;
+    background-size: 15px 15px;
+}
+.footer_b {
+    font-size: 12px;
+    padding: 15px 0;
+    color: #666;
+    text-align: center;
+}
+.footer_b a:nth-child(1) {
+    color: red;
+}
+.footer_b a:nth-child(2) {
+    color: #000;
+    font-weight: 900;
+}
+
+/*翻页 star*/
+.page .row {
+    padding: 6px 0 3px 0;
+    background-color: #fff;
+    /*border-bottom: none;*/
+    border: none;
+}
+
+#select {
+    font-size: 16px;
+    padding: 6px 10px 6px 16px;
+}
+
+.page .col-xs-4 {
+    text-align: center;
+}
+
+.page .col-xs-4 input {
+    padding: 6px 18px;
+    font-size: 13px;
+    border-radius: 6px;
+    background: linear-gradient(#F0F0F0 20%, #D7D7D7 50%);
+    border: 1px solid #cccccc;
+}
+/*翻页 end*/

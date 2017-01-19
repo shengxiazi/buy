@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- bootstrap -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>白菜价-淘宝内部券</title>
+    <link rel="shortcut icon" href="buy_favicon.ico">
+    <!-- css样式 -->
+    <link rel="stylesheet" type="text/css" href="cabbage/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="cabbage/css/base.css">
+    <link rel="stylesheet" type="text/css" href="cabbage/css/cabbage.css">
+</head>
+<body>
+    <!-- 布局容器 -->
+    <div class="buy_layout">
+         <!-- 头部标题 -->
+        <header>
+            <!-- 标题头 -->
+            <div class="cabbage_tit" id="cabbage_tit">
+                <a href="../index.html" class="buy_icon glyphicon glyphicon-menu-left"></a>
+                <h3>白菜价-淘宝内部券</h3>
+                <a href="http://m.manmanbuy.com/?o=download"><img src="cabbage/images/header_app.png" alt=""></a>
+            </div>
+            <!-- 标题列表 -->
+            <div class="cabbage_tit_list ">
+                <div class="buy_tabs">
+                    <ul class="clearfix"></ul>
+                </div>
+                <div class="search_icon">
+                    <a class="buy_icon glyphicon glyphicon-search" id="search_btn"></a>
+                </div>
+                <form action="#" id="search_box" class="m_hide">
+                    <div class="inp">
+                        <a href="#" class="buy_icon glyphicon glyphicon-search"></a>
+                        <input type="search" name="keyword" placeholder="搜索商品即可查内部券">
+                    </div>
+                    <input type="submit" name="" value="搜索" class="sea">
+                </form>
+             </div>
+        </header>
+        <!-- 商品列表 -->
+        <section class="cabbage_products">
+             <ul class="clearfix" id="cabbage_products" ></ul>
+             <a href="#cabbage_tit" class="gotop glyphicon glyphicon-arrow-up" id="gotop"></a>
+        </section>
+        <!-- 加载模块 -->
+        <section class="loading m_hide">
+            <em><img src="cabbage/images/loading.gif" alt=""></em>
+            <span>嘿，小样儿，服务器正在玩命加载中....</span>
+        </section>
+        <!-- 尾部 -->
+        <footer>
+            <div class="footer_t">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#cabbage_tit">返回顶部</a>
+            </div>
+            <div class="footer_b">
+                <div class="appbanner">
+                    <img src="cabbage/images/logo.png" alt="">
+                    <div class="con">
+                        <h3>慢慢买APP</h3>
+                        <p>给喜欢网购的同学推荐下[慢慢买]这个APP，第一时间更新国内外的优惠信息！
+                        </p>
+                        <a href="http://m.manmanbuy.com/?o=download">立即打开</a>
+                        <div class="buy_icon cls glyphicon glyphicon-remove"></div>
+                    </div>
+                </div>
+                <a href="#">手机APP下载</a>
+                <a href="../index.html" tppabs="http://m.manmanbuy.com/">慢慢买手机版</a> -- 掌上比价平台
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <!-- js脚本 -->
+    <script src="cabbage/js/lib/jquery-2.2.2.min.js"></script>
+    <script src="cabbage/js/lib/bootstrap.min.js"></script>
+    <script src="cabbage/js/lib/template.js"></script>
+    <script src="cabbage/js/lib/swipe.js"></script>
+    <script src="cabbage/js/cabbage.js"></script>
+    <!-- 模板引擎 -->
+    <!-- 标题列表模板 -->
+    <script type="text/html" id="tittpl">
+        {{each result as value}}
+            <li>
+               <a href="#{{value.titleId}}">{{value.title}}</a>
+            </li>
+        {{/each}}
+    </script>
+    <!-- 商品列表模板 -->
+    <script type="text/html" id="cabbagetpl">
+            <!-- {{each result as value}} -->
+                <!-- <li> -->
+                    <!-- <a href="#" class="gobuy"></a> -->
+                    <!-- <div href="#" class="pic"> -->
+                       <!-- {{#value.productImg}}
+                    </div>
+                    <div class="info">
+                        <div class="i">
+                            <div>{{#value.productName}}</div>
+                            <div>{{#value.productPrice}}</div>
+                        </div>
+                        <div class="o">
+                          {{#value.productCouponRemain}}
+                            <div class="bot clearfix">
+                                <div class="f_l">
+                                    {{#value.productCoupon}}
+                                </div>
+                                <div class="f_r">
+                                    {{#value.productHref}}
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                <!-- </li> -->
+            <!-- {{/each}} -->
+    </script>
+</body>
+</html>

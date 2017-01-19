@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>品牌大全</title>
+    <link rel="shortcut icon" href="../buy_favicon.ico"/>
+    <link rel="stylesheet" href="discount%20coupon/css/base.css"/>
+    <link rel="stylesheet" href="discount%20coupon/css/discountCoupon.css"/>
+</head>
+<body>
+<!--header begin-->
+<div class="header" id="header">
+    <a href="../index.html" class="return f_left">
+        <s><i>◇</i></s>
+    </a>
+
+    <h2>优惠券</h2>
+
+    <div class="appdown"><a href="#"><img src="discount%20coupon/images/header_app.png"/></a></div>
+</div>
+<!--header end-->
+
+<!--content begin-->
+<div class="content clearfix">
+
+
+</div>
+<!--brand end-->
+
+<!--foot begin-->
+<div class="foot">
+    <div class="footTop">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#" style="width: 40%;position: relative"><img src="discount%20coupon/images/top.jpg">返回顶部</a>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="#" style="color: red">手机app下载</a>
+            <a href="#">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+
+        <p>m.manmanbuy.com</p>
+    </div>
+</div>
+<!--foot end-->
+
+<!--slide begin-->
+
+<!--slide end-->
+</body>
+<script type="text/javascript" src="discount%20coupon/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="discount%20coupon/js/lib/template.js"></script>
+<script type="text/javascript" src='discount%20coupon/js/discountCoupon.js'></script>
+<script type="text/html" id="discount">
+    <ul>
+        {{each result as value}}
+        <li>
+            <a href="discount%20coupon/disCouDetail.html#{{value.couponId}}"><img src="{{value.couponImg}}"/>{{value.couponTitle}}</a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+</html>

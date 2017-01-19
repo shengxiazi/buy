@@ -1,0 +1,117 @@
+body {
+    font-style: 'Microsoft YaHei';
+    background: #fff;
+    display: block;
+    max-width: 640px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+/*header begin*/
+.header {
+    height: 49px;
+    background: #ff841d;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+}
+
+.header h2 {
+    margin-top: 10px;
+}
+
+.header > .return {
+    display: block;
+}
+
+.header > .return > s {
+    display: block;
+    width: 12px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    left: 20px;
+    top: -3px;
+}
+
+.header > .return > s > i {
+    font-size: 40px;
+    color: #fff;
+}
+
+.header .appdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 7px;
+}
+
+.header .appdown a img {
+    max-height: 34px;
+    overflow: hidden;
+}
+
+/*header end*/
+/*content begin*/
+.content > .link {
+    width: 300px;
+    margin: 10px auto;
+}
+
+.content > .link > a {
+    padding: 10px 8px;
+    background: #f4f4f4;
+    border: 1px solid #bfbfbf;
+    float: left;
+    margin: 0 0 5px 5px;
+    font-size: 16px;
+}
+
+.content > .link > a > img {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/*content end*/
+/*foot begin*/
+.foot {
+    background-color: #f1f1f1;
+}
+
+.footTop {
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 25px;
+}
+
+.foot > .footTop a {
+    /*display: inline-block;*/
+    box-sizing: border-box;
+    float: left;
+    font-size: 14px;
+    border-right: 1px solid #c4c4c4;
+    text-align: center;
+    width: 30%;
+}
+
+.foot > .footTop > a > img {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-top: -5px;
+    margin-right: 2px;
+}
+
+.foot > .footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 15px 0;
+    color: #666;
+}
+
+/*foot end*/

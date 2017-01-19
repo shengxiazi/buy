@@ -1,0 +1,98 @@
+/*商品信息 star*/
+.goods-content {
+    padding: 4px 10px;
+}
+
+#g-title {
+    font-size: 18px;
+    margin: 10px auto 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #5a5a5a;
+}
+
+#g-price {
+    color: #ff6c00;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#g-others {
+    padding-top: 10px;
+}
+
+#g-others span {
+    color: #999;
+    font-size: 12px;
+}
+
+#introduce {
+    line-height: 24px;
+    color: #606060;
+    margin: 6px auto;
+    font-size: 16px;
+}
+
+#unknown {
+    float: right;
+    position: relative;
+    z-index: -1;
+}
+
+.goods-content .buy {
+    display: block;
+    margin: 30px 10px 40px 10px;
+    background: #ff9000;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+/*商品信息 end*/
+
+/*商品评价 star*/
+#goods-comment {
+    padding: 20px 0;
+}
+
+#goods-comment .tit {
+    font-size: 16px;
+    padding: 6px 8px;
+}
+
+#goods-comment .reply {
+    padding: 6px 8px;
+}
+
+#goods-comment .reply .form {
+    border: 2px solid #eceae8;
+    border-radius: 3px;
+    padding: 4px 0 0 4px;
+    background-color: #fff;
+    position: relative;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.reply .form .ctrl {
+    background-color: #fbfbfb;
+    height: 36px;
+    margin-left: -4px;
+    border-top: 1px solid #f2f2f2;
+}
+
+.reply .form .ctrl input {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    background: #ff841d;
+    border: 2px solid #ff841d;
+    padding: 6px 20px;
+    color: #fff;
+    border-radius: 0 0 2px 0;
+    font-size: 16px;
+}
+/*商品评价 end*/

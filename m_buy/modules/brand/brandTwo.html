@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>品牌大全</title>
+    <link rel="shortcut icon" href="../../buy_favicon.ico"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/brandTwo.css"/>
+</head>
+<body>
+<!--header begin-->
+<div class="header" id="header">
+    <div class="logo"><a href="#"><img src="images/header_logo.png"/></a></div>
+    <div class="appdown"><a href="#"><img src="images/header_app.png"/></a></div>
+</div>
+<!--header end-->
+<!--search begin-->
+<section id="form-search">
+    <form action="#" class="search clearfix">
+        <input type="search" placeholder="请输入你想比价的商品"/>
+        <input type="button" value="搜索"/>
+    </form>
+</section>
+<!--search end-->
+<!--nav begin-->
+<div class="nav">
+    <a href="../../index.html">首页</a>
+    >
+    <a href="#" class="best">品牌大全</a>
+</div>
+<!--nav end-->
+<!--brand begin-->
+<div class="brand">
+
+
+</div>
+<!--brand end-->
+<!--foot begin-->
+<div class="foot">
+    <div class="footTop">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#" style="width: 40%;position: relative"><img src="images/top.jpg">返回顶部</a>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="#" style="color: red">手机app下载</a>
+            <a href="#">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+
+        <p>m.manmanbuy.com</p>
+    </div>
+</div>
+<!--foot end-->
+</body>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/zepto.min.js"></script>
+<script type="text/javascript" src="js/lib/template.js"></script>
+<script type="text/html" id="test">
+    {{each result as value i}}
+    <a href="brandTwo.html#{{value.brandId}}" class="modelTwo" id="modelTwo{{i}}">
+        <span class="f_left" id="sort{{i}}">{{i+1}}</span>
+        <h4>{{value.brandName}}</h4>
+
+        <p>{{value.brandInfo}}</p>
+        <s class=""><i>◇</i></s>
+    </a>
+    {{/each}}
+</script>
+<script type="text/html" id="sale">
+    <ul>
+        {{each result as value i}}
+        <li class="clearfix">
+            <a href="../search/search-details.html#{{value.productId}}">
+                <div class="pic f_left">{{#value.productImg}}</div>
+                <div class="info">
+                    <div class="titt">{{value.productName}}</div>
+                    <div class="price">
+                        <span class="pr">{{value.productPrice}}</span>
+                        <span class="star f_right">
+                            ★★★★★
+                        </span>
+                    </div>
+                    <div class="other">
+                        <span>{{value.productQuote}}</span>
+                        <span>{{value.productCom}}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/html" id="comment">
+    <ul>
+        {{each result as value i}}
+        <li>
+            <a href="#">
+                <div class="protite clearfix">
+                    <div class="pic f_left">图片</div>
+                    <div class="tite">标题</div>
+                </div>
+                <div class="combox">
+                    <div class="name">
+                        {{value.comName}}：
+                        <span class="star">★★★★★</span>
+                        <i class="f_right">{{value.comTime}}</i>
+                    </div>
+                    <div class="comment">{{value.comContent}}</div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/javascript" src='js/brandTwo.js'></script>
+</html>

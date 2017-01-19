@@ -1,0 +1,110 @@
+/*商品详情 star*/
+.goods-details .title {
+    position: relative;
+}
+
+#goods-name {
+    text-align: center;
+    font-size: 17px;
+    padding: 3% 5% 0 5%;
+}
+
+#goods-pic {
+    text-align: center;
+}
+
+#goods-pic img {
+    display: inline-block;
+}
+
+.goods-details .row .col-xs-4 {
+    text-align: center;
+    background-color: #FFC525;
+    border-left: 1px solid #C14D00;
+    padding: 6px 0;
+}
+
+.goods-details .row .col-xs-4:first-child {
+    background-color: #FF9914;
+    border: none;
+}
+
+.goods-details .row .col-xs-4 a {
+    color: white;
+    text-decoration: none;
+}
+
+#compare {
+    padding: 8px 0;
+    font-size: 16px;
+    position: relative;
+}
+
+#compare table .red {
+    color: #d10311;
+    position: absolute;
+    right: 70px;
+    top: 10px;
+}
+
+#compare tr td:nth-child(2) a {
+    color: black;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+
+#compare .p_pic img {
+    position: absolute;
+    left: 25px;
+    top: 12px;
+}
+
+.goods-details p {
+    border-top: 1px solid #cccccc;
+    border-bottom: 2px solid #7A7A7A;
+    font-size: 12px;
+    color: #888;
+    padding: 8px 10px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.comment_title {
+    line-height: 34px;
+    text-align: center;
+    background: #dbdbdb;
+}
+
+#comment_list li {
+    font-size: 12px;
+    color: #666;
+    padding: 10px;
+    padding-bottom: 0;
+    line-height: 18px;
+    margin-top: 3px;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment_content {
+    margin-top: 5px;
+    color: black;
+    line-height: 20px;
+}
+
+.goods-details .more {
+   text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.comment_more {
+    text-align: center;
+    width: 95%;
+    font-size: 16px;
+    padding: 8px 0 4px 0;
+    border-radius: 6px;
+    background: linear-gradient(#F0F0F0 20%, #D7D7D7 50%);
+    border: 1px solid #cccccc;
+}
+
+/*商品详情 end*/

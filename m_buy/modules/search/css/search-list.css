@@ -1,0 +1,79 @@
+.layout {
+    background-color: #f1f1f1;
+}
+
+/*商品列表 star*/
+.goodsList ul {
+    margin-bottom: 0;
+}
+
+.goodsList li {
+    padding: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #fff;
+}
+
+.goodsList li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+
+.goodsList li a img {
+    padding-right: 10px;
+}
+
+.goodsList li a .goods_info {
+    overflow: hidden;
+}
+
+.goods_info .name {
+    line-height: 21px;
+    height: 44px;
+    overflow: hidden;
+}
+
+.goods_info .prices {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #ea3900;
+}
+
+.goods_info .others {
+    margin-top: 5px;
+    color: #a1a1a1;
+    font-size: 12px;
+}
+/*商品列表 end*/
+
+
+
+
+
+
+/*翻页 star*/
+.page .row {
+    padding: 6px 0 3px 0;
+    background-color: #fff;
+    /*border-bottom: none;*/
+    border: none;
+}
+
+#select {
+    font-size: 16px;
+    padding: 6px 10px 6px 16px;
+}
+
+.page .col-xs-4 {
+    text-align: center;
+}
+
+.page .col-xs-4 input {
+    padding: 6px 18px;
+    font-size: 13px;
+    border-radius: 6px;
+    background: linear-gradient(#F0F0F0 20%, #D7D7D7 50%);
+    border: 1px solid #cccccc;
+}
+/*翻页 end*/

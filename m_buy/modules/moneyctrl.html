@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.00" />
+    <title>慢慢买</title>
+    <link rel="shortcut icon" href="buy_favicon.ico">
+    <link rel="stylesheet" type="text/css" href="moneyctrl/css/bootstrap.css">
+    <link rel="stylesheet" href="moneyctrl/css/base.css">
+    <link rel="stylesheet" href="moneyctrl/css/moneyctrl.css">
+</head>
+<body>
+    <div class="index_layout">
+        <!-- 标题头 -->
+        <header>
+            <div class="cabbage_tit" id="cabbage_tit">
+                <a href="../index.html" class="buy_icon glyphicon glyphicon-menu-left"></a>
+                <h3>省钱控-最新优惠</h3>
+                <a href="http://m.manmanbuy.com/?o=download"><img src="cabbage/images/header_app.png" alt=""></a>
+            </div>
+        </header>
+        <ul id="list" class="clearfix"></ul>
+         <!--翻页 star-->
+        <section class="page">
+            <div class="row" style="margin-left: 0;">
+                <div class="col-xs-4">
+                    <input type="button" value="上一页" id="pageUp" />
+                </div>
+                <div class="col-xs-4">
+                    <select name="select" id="select"></select>
+                </div>
+                <div class="col-xs-4">
+                    <input type="button" value="下一页" id="pageDown" />
+                </div>
+            </div>
+        </section>
+        <!--翻页 end-->
+          <footer>
+             <a href="#cabbage_tit" class="gotop" id="gotop">→</a>
+            <div class="footer_t">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#cabbage_tit">返回顶部</a>
+            </div>
+            <div class="footer_b">
+                <a href="#">手机APP下载</a>
+                <a href="../index.html" tppabs="http://m.manmanbuy.com/">慢慢买手机版</a> -- 掌上比价平台
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer>
+    </div>
+</body>
+    <!--引入模板-->
+    <script src="moneyctrl/js/jquery-2.2.2.min.js"></script>
+    <script src="moneyctrl/js/bootstrap.min.js"></script>
+    <script src="moneyctrl/js/template.js"></script>
+    <script src="moneyctrl/js/moneyctrl.js"></script>
+    <!--商品部分模板-->
+    <script type="text/html" id="productId">
+        {{each result as value}}
+            <li class="clearfix ui-border-b">
+                <a href="inlanddiscount.html?productid={{#value.productId}}">
+                    <div class="pic">
+                        {{#value.productImgSm}}
+                    </div>
+                    <div class="clearfix info">
+                        <div class="title">
+
+                            {{#value.productName}}
+
+                            <span>{{#value.productPinkage}}</span>
+                        </div>
+                        <div class="other">
+                            {{#value.productFrom}}
+                            <span class="mall">{{#value.productTime}}</span>
+                            <span class="comment">
+                                <i class="icon-comment"></i>
+                               {{#value.productComCount}}
+
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+
+</html>

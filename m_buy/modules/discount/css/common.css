@@ -1,0 +1,336 @@
+/* 字体图标 */
+
+@font-face {
+    font-family: "buy";
+    src: url(../lib/bootstrap/fonts/glyphicons-halflings-regular.eot) format("embedded-opentype"), url(../lib/bootstrap/fonts/glyphicons-halflings-regular.svg) format("svg"), url(../lib/bootstrap/fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../lib/bootstrap/fonts/glyphicons-halflings-regular.woff) format("woff");
+}
+
+.back_icon {
+    font-family: 'buy';
+}
+
+
+/*头部 star*/
+
+.header {
+    width: 100%;
+    background-color: #FF841D;
+    position: relative;
+}
+
+.header .back {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+.title h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header .download {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+.back-icon {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.back-icon:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/*头部 end*/
+
+
+/*搜索部分 star*/
+
+.form-search {
+    width: 100%;
+    background-color: white;
+    padding: 10px 10% 9px 10px;
+    position: relative;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.searchBar {
+    width: 100%;
+}
+
+.searchBar .search {
+    background-color: #F1F1F1;
+    font-size: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 5%;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.searchBar .sub {
+    position: absolute;
+    background-color: #FF841D;
+    color: white;
+    font-size: 16px;
+    padding: 6px 16px 6px 16px;
+    border-radius: 15px 15px 15px 15px;
+    right: 9px;
+    top: 10px;
+}
+
+
+/*搜索部分 end*/
+
+
+/*菜单部分 star*/
+
+.menuBar {
+    width: 100%;
+    padding: 5px 8px 11px 8px;
+    background: linear-gradient(white 40%, #F0F0F0 60%, #D7D7D7 80%);
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.menu {
+    width: 100%;
+    position: relative;
+}
+
+.menu .f_left {
+    margin-top: 7px;
+}
+
+.menu .f_left a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu .btn {
+    position: absolute;
+    padding: 6px 16px;
+    right: 0;
+    background: linear-gradient(#F0F0F0 20%, #D7D7D7 50%);
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+
+/*菜单部分 end*/
+
+
+/*底部 star*/
+
+
+/*需要bootstrap支持*/
+
+.footer {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.row {
+    width: 100%;
+    background-color: #EFEFEF;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.footer .col-xs-4 a {
+    padding: 8px 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    color: #5A5A5A;
+    text-align: center;
+    display: block;
+    border-left: 1px solid #C4C4C4;
+}
+
+.footer .col-xs-4:first-child a {
+    border-left: none;
+}
+
+.footer p {
+    margin: 15px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+    color: #5A5A5A;
+}
+
+.footer p a:first-child {
+    color: red;
+    text-decoration: none;
+}
+
+.footer p a:first-child:visited {
+    color: red;
+}
+
+.footer p a:nth-child(2) {
+    color: #5A5A5A;
+    text-decoration: none;
+}
+
+.footer p a:nth-child(2):visited {
+    color: #5A5A5A;
+}
+
+.footer p:last-child {
+    margin-top: 0;
+}
+
+.footer .top-box {
+    position: relative;
+}
+
+.footer .top {
+    position: absolute;
+    left: -16px;
+    top: 0;
+}
+
+
+/*底部 end*/
+
+.layout {
+    max-width: 640px;
+    min-width: 300px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+/*波浪部分 star*/
+
+#wave {
+    top: 46px;
+    position: fixed;
+    background-image: linear-gradient(to bottom, gold 0%, #FF841D 85%, #FF841D 100%);
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 300px;
+    z-index: 99999;
+}
+
+#waveerror {
+    top: 46px;
+    position: absolute;
+    background-image: linear-gradient(to bottom, gold 0%, #FF841D 85%, #FF841D 100%);
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 300px;
+    z-index: 99999;
+}
+
+.wave {
+    position: fixed;
+    top: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 300px;
+}
+
+.wave div {
+    width: 19%;
+    height: 50%;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 30%, #FF841D 30%, #FF841D 100%);
+    position: fixed;
+    top: 80%;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-family: '华文琥珀';
+}
+
+.wave div:nth-child(1) {
+    left: 0px;
+    animation: wave1 1.5s linear infinite;
+    -webkit-animation: wave1 1.5s linear infinite;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+@keyframes wave1 {
+    0% {
+        height: 30%;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+    }
+    50% {
+        height: 60%;
+        opacity: 1;
+    }
+    100% {
+        height: 30%;
+    }
+}
+
+@-webkit-keyframes wave1 {
+    0% {
+        height: 30%;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+    }
+    50% {
+        height: 60%;
+        opacity: 1;
+    }
+    100% {
+        height: 30%;
+    }
+}
+
+.wave div:nth-child(2) {
+    left: 20%;
+    animation: wave1 1.75s linear infinite;
+    -webkit-animation: wave1 1.75s linear infinite;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.wave div:nth-child(3) {
+    left: 40%;
+    animation: wave1 2s linear infinite;
+    -webkit-animation: wave1 2s linear infinite;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.wave div:nth-child(4) {
+    left: 60%;
+    animation: wave1 2.25s linear infinite;
+    -webkit-animation: wave1 2.25s linear infinite;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.wave div:nth-child(5) {
+    left: 80%;
+    animation: wave1 2.5s linear infinite;
+    -webkit-animation: wave1 2.5s linear infinite;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    font-size: 30px;
+}
+
+
+/*波浪部分 end*/
